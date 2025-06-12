@@ -11,10 +11,11 @@ class TodoCreateView(CreateView):
     fields = ['title', 'deadline']
     success_url = reverse_lazy('todo_list')
 
-class TodoUpdateView(CreateView):
+class TodoUpdateView(UpdateView):
     model = Todo
     fields = ['title', 'deadline']
     success_url = reverse_lazy('todo_list')
+
 
 
 
